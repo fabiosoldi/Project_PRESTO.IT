@@ -1,0 +1,93 @@
+
+:root{
+    --blu-chiaro : rgb(12, 127, 241);
+    --giallo : rgb(200, 255, 1);
+    --rosso: rgb(200,0,0);
+    --verde: rgb(17,151,0);
+}
+.btn-custom{
+    background-color: var(--verde);
+    color : white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.btn-custom:hover{
+background-color: var(--giallo);
+color: var(--verde);
+transition: 0.4s;
+}
+
+.navbarIdc, #Iconflip, #conteinerNav, #navbarId, #Iconhide{
+    transition: 0.4s;
+}
+h1{
+    font-family: 'Press Start 2P', cursive;
+}
+.header-color{
+    color : var(--giallo);
+    margin-top: 150px;
+}
+.header-custom{
+    background: linear-gradient(var(--blu-chiaro), rgb(142, 221, 235));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+.font{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+.fontbar{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color : var(--giallo);
+    margin-top: 40px;
+    padding: 40px;
+    background-color: black;
+    background-size: cover;
+}
+.high-score{
+    color : var(--rosso);
+}
+.swiper {
+    height: 300px;
+  }
+
+
+footer{
+    background-color: var(--verde);
+    color : var(--giallo);
+}
+li>a{
+    color : var(--giallo);
+}
+
+
+#priceInput{
+    width: 100%;
+}
+
+.inputNumber, .eurSymbol{
+   
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.announcementCard{
+
+    width: 250px;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-head{
+   border-radius: 50%;
+   height: 100px;
+}

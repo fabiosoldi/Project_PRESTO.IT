@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presto.it</title>
+
+     <!-- CDN SWIPER -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- File CSS-Custom -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Google Fonts CDN -->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body class="header-custom">
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top coloreNav" id = "navbarId">
+        <div class="container-fluid" id = "conteinerNav">
+          <button id = "Iconflip" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i><img src="./ICONS/icona-freccia.png" alt=""></i>
+          </button>
+          <a class="navbar-brand" id = "Iconhide" href="#">
+            <img class=" img-fluid" src="./ICONS/icons8-box-64.png" alt="Logo">
+          </a>
+          <div class="collapse navbar-collapse navbarIdc" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active font" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font" href="#">Chi Siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font" href="./annunci.html">Annunci</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="wordInput" type="search" placeholder="Cerchi un prodotto?" aria-label="Search">
+              <button class="btn-custom font" id = "searchBtn" type="button">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     <!-- FINE NAVBAR -->
+
+     <!-- HEADER -->
+
+<header class="container-fluid">
+  <div class="row vh-100">
+      <div class="col-12 text-center py-5">
+              <h1 class="header-color">Presto.it</h1>
+              <h3 class="fontbar">Sarà anche arcade, ma è un lampo nelle consegne!!</h3>
+      </div>
+  </div>
+
+</header>
+
+    <!-- FINE HEADER -->
+
+    <!-- SEZIONE ANNUNCI -->
+  
+    <section class="container-fluid">
+      <div class="row my-5 justify-content-center">
+        <h1 class="font text-center fs-4">-Filtra per:-</h1>
+        <div class="col-12 col-md-4">
+         
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Categoria
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="contenitoreCategorie" class="accordion-body">
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="All" checked></input>
+
+                      <label class="form-check-label font" for="All">
+                        Tutte le categorie
+                      </label>
+
+                  </div>
+      
+
+              </div>
+
+            </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-12 col-md-4">
+          
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Prezzo
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <input type="range" id="priceInput">
+                  <span class="inputNumber" id="incrementNumber">0</span>
+                  <span class="eurSymbol">€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div id="contenitoreCards">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--JS CUSTOM ESTERNO  -->
+     <script src="./annunci.js"></script>
+
+    <!-- JS BOOTSTRAP CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presto.it</title>
+    
+    <!-- CDN SWIPER -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- File CSS-Custom -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Google Fonts CDN -->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<!-- AOS CDN CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="header-custom">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id = "navbarId">
+        <div class="container-fluid" id = "conteinerNav">
+          <button id = "Iconflip" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i><img src="./ICONS/icona-freccia.png" alt=""></i>
+          </button>
+          <a class="navbar-brand" id = "Iconhide" href="#">
+            <img class=" img-fluid" src="./ICONS/icons8-box-64.png" alt="Logo">
+          </a>
+          <div class="collapse navbar-collapse navbarIdc" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active font" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font" href="#">Chi Siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active font" href="./annunci.html">Annunci</a>
+              </li>
+              
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+<!-- FINE NAVBAR -->
+
+<!-- HEADER -->
+
+<header class="container-fluid" id = "Home">
+    <div class="row vh-100">
+        <div class="col-12 text-center py-5">
+                <h1 class="header-color">Presto.it</h1>
+                <h3 class="fontbar">Sarà anche arcade, ma è un lampo nelle consegne!!</h3>
+        </div>
+    </div>
+
+</header>
+
+<!-- FINE HEADER -->
+
+<section class="container-fluid bg-primary" id = "SCORES">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <img data-aos="fade-right" class="img-fluid" src="./ICONS/corriere.png" alt="Corriere">
+    </div>
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2 class="font fs-3 high-score text-center">-HIGH-SCORES!-</h2>
+      <p class="font lead"><span class="text-white fs-1 numSpan1">0</span> clienti soddisfatti</p>
+      <p class="font lead"><span class="text-white fs-1 numSpan2">0</span> prodotti consegnati</p>
+      <p class="font lead"><span class="text-white fs-1 numSpan3">0</span> recensioni</p>
+
+    </div>
+  </div>
+</section>
+
+<section class="container my-5 py-5">
+    
+  <div class="row justify-content-center">
+
+    <h2 class="text-center font fs-2">- Dicono di Noi -</h2>
+    
+    <div class="col-12 col-md-8">
+      
+      <!-- SWIPER INIZIO -->
+      
+      <!-- Slider main container -->
+      <div class="swiper">
+        
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          
+    
+        </div>
+        
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+        
+      </div>
+      
+      <!-- SWIPER FINE -->
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
+
+    <!-- File Javascript -->
+<script src="main.js"></script>
+
+    <!-- JS Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+ </script>
+
+<!-- JS AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- CDN SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- JS interno custom -->
+
+<script>
+
+  let feedback = [
+
+    {name : 'Valerio', star : '5', quote : `Il sito più bello che abbia mai visto`},
+    {name : 'Adriano', star : '4', quote : `Il più veloce del web`},
+    {name : 'Khadija', star : '1', quote : `La pizza era fredda!1!`},
+    {name : 'Cassandra', star : '3', quote : `In code we trust`},
+  ]
+
+
+  // creazione card
+
+  let swiperWrapper = document.querySelector('.swiper-wrapper');
+
+  feedback.forEach( (recensione)=>{
+
+    let div = document.createElement('div');
+    let stelline = recensione.star;
+    let stringaStelle = '';
+
+    for(let i = 0; i < stelline; i++){
+      stringaStelle += `<i><img src="./ICONS/icons8-star-64.png" alt=""></i>`
+    }
+   console.log(stringaStelle);
+    div.classList.add('swiper-slide' , 'd-flex' , 'align-items-center' ,'justify-content-center');
+
+    div.innerHTML =  `
+                  <div class="card-recensioni">
+                    <p class="h3 font"> ${recensione.name} </p>
+                    <p>${stringaStelle}</p>
+                    <p class="font text-center"> ${recensione.quote} </p>
+                  </div>
+    
+    `;
+
+    swiperWrapper.appendChild(div);
+
+  } )
+
+
+
+  // swiper inizializzato
+  
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'horizontal',
+    loop: true,
+
+    // autoplay
+
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+
+    // effect
+    
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+
+    // breakpoints
+
+    breakpoints: {
+       
+      640: {
+    
+        slidesPerView: 3,
+    
+      }},
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  
+</script>
+
+
+<footer>
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-12 col-md-6 font">
+        <h3>ABOUT PRESTO</h3>
+        <p>P.IVA: 987654321</p>
+        <p>Indirizzo : via S.Ansano 67</p>
+        <p>Tel : 34562146</p>
+        <p>e-mail : presto.it@gmail.com</p>
+
+        <i><img src="./ICONS/icons8-facebook-64.png" alt=""></i>
+        <i><img src="./ICONS/icons8-instagram-64.png" alt=""></i>
+        <i><img src="./ICONS/icons8-linkedin-64.png" alt=""></i>
+      </div>
+      <div class="col-12 col-md-6 font">
+        <h3>QUICK MENU</h3>
+      <div class="d-flex flex-column justify-content-center h-75">
+        <ul>
+         <li> <a href="#SCORES"><p> HIGH-SCORES! </p> </a> </li>
+          <li><a href="#Home"><p> Home </p> </a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
